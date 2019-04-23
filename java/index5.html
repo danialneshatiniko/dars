@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="fname" placeholder="danial"><br><br>
+    <input type="text" id="lname" placeholder="neshati"><br><br>
+    <button onclick="concatenation(getfirsname(),getlastname());">confirm</button>
+    <p id="demo"></p>
+    <script>
+        let objparagraph = document.getElementById("demo");
+        let objfirstnameinput = document.getElementById('fname');
+        let objlirstnameinput = document.getElementById('lname');
+        function getFirstName() {
+            return objFirstNameInput.value;
+        }
+        function getLastName() {
+            return objLastNameInput.value;
+        }
+        // mapping
+        function concatenation(fName, lName) {
+            objPargraph.innerText = "hi, " + fName + " " + lName + "!";
+        }
+
+    </script>
+
+</body>
+
+</html>
